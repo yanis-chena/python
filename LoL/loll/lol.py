@@ -37,7 +37,7 @@ def process_form():
         summoner_name = request.form['form_summoner_name']
         tag_line = request.form['tag_line']
         region = request.form['region']
-        api_key = "RGAPI-bf84cce7-2730-4c67-9bcc-1480e498ac4f"
+        api_key = "clé"
 
 
         account_url = f"https://{region}.api.riotgames.com/riot/account/v1/accounts/by-riot-id/{summoner_name}/{tag_line}?api_key={api_key}"
@@ -66,6 +66,7 @@ def process_form():
             })
         
         return jsonify(participant_list)
+        
 
         
             
