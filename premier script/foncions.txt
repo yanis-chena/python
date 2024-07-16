@@ -1,0 +1,4 @@
+
+https://courspython.com/fonctions.html
+
+https://openclassrooms.com/fr/courses/4262331-demarrez-votre-projet-avec-python/4263766-structurez-votre-programme-en-utilisant-les-fonctions

@@ -1,0 +1,18 @@
+class Personne:
+    def _init_(self,nom,prenom,ville):
+        self._nom = 1
+        self.prenom = prenom
+        self.ville = 3
+
+    def _getnom(self):
+        print("montre")
+        return self._nom
+
+    def _setnom(self,nouveau_nom):
+        print("modifi")
+        self._nom = nouveau_nom
+
+    _nom = property(get_nom,set_nom)
+
+p1 = Personne("yay, "chena", "che")
+p2 = Personne ("na","lin","da")

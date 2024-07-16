@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Match Details</title>
+</head>
+<body>
+    <h2>Match Participants</h2>
+    <table border="1">
+        <tr>
+            <th>Champion</th>
+            <th>Spell 1</th>
+            <th>Spell 2</th>
+            <th>Win</th>
+            <th>Kills</th>
+            <th>Deaths</th>
+            <th>Assists</th>
+            <th>Total Damage Dealt</th>
+            <th>Gold Earned</th>
+            <th>Champion Level</th>
+            <th>Total Minions Killed</th>
+        </tr>
+        {% for participant in participants %}
+        <tr>
+            <td>{{ participant.champion }}</td>
+            <td>{{ participant.spell1 }}</td>
+            <td>{{ participant.spell2 }}</td>
+            <td>{{ participant.win }}</td>
+            <td>{{ participant.kills }}</td>
+            <td>{{ participant.deaths }}</td>
+            <td>{{ participant.assists }}</td>
+            <td>{{ participant.totalDamageDealt }}</td>
+            <td>{{ participant.goldEarned }}</td>
+            <td>{{ participant.champLevel }}</td>
+            <td>{{ participant.totalMinionsKilled }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
